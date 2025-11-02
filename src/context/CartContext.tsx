@@ -1,13 +1,13 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import type { ShopItem } from "../data/ShopProducts";
 
 export type CartLine = {
-  id: string;            // use item.id from your ShopProducts
+  id: string;
   title: string;
-  price: number;         // numeric (e.g. 19.99)
-  image?: string;        // optional thumbnail
+  price: number;
+  image?: string;
   qty: number;
-  // keep the original item if you want to reuse other fields
   item?: ShopItem;
 };
 
@@ -51,7 +51,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       const line: CartLine = {
         id: item.id,
         title: item.title,
-        price: item.price,        // ensure ShopItem.price is a number
+        price: item.price,
         image: item.image,
         qty,
         item,
@@ -70,13 +70,21 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     );
   }, []);
 
-  const increment = useCallback((id: string) => setQty(id, (lines.find(l => l.id === id)?.qty || 0) + 1), [lines, setQty]);
-  const decrement = useCallback((id: string) => setQty(id, (lines.find(l => l.id === id)?.qty || 0) - 1), [lines, setQty]);
+  const increment = useCallback(
+    (id: string) => setQty(id, (lines.find(l => l.id === id)?.qty || 0) + 1),
+    [lines, setQty]
+  );
+
+  const decrement = useCallback(
+    (id: string) => setQty(id, (lines.find(l => l.id === id)?.qty || 0) - 1),
+    [lines, setQty]
+  );
 
   const clear = useCallback(() => setLines([]), []);
 
   const { count, subtotal } = useMemo(() => {
-    let c = 0, s = 0;
+    let c = 0;
+    let s = 0;
     for (const l of lines) {
       c += l.qty;
       s += l.qty * l.price;
@@ -84,7 +92,18 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     return { count: c, subtotal: Number(s.toFixed(2)) };
   }, [lines]);
 
-  const value: CartState = { lines, add, remove, setQty, increment, decrement, clear, count, subtotal };
+  const value: CartState = {
+    lines,
+    add,
+    remove,
+    setQty,
+    increment,
+    decrement,
+    clear,
+    count,
+    subtotal,
+  };
+
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
 

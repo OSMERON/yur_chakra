@@ -1,6 +1,6 @@
 // src/components/Hero.tsx
 import { IconChevronRight } from './Icon';
-import { Link } from "react-router-dom";
+
 
 export default function Hero() {
   return (
@@ -17,8 +17,13 @@ export default function Hero() {
         </p>
 
         <div className="hero-ctas">
-          <Link className="btn btn-solid" to="/shop"> Shop Collection <IconChevronRight className="ml-8" /> </Link>
-           <Link className="btn btn-outline" to="/meanings"> Discover Meanings </Link>
+          <a className="btn btn-solid" href="Shop">
+            Shop Collection
+            <IconChevronRight className="ml-8" />
+          </a>
+          <a className="btn btn-outline" href="ChakraMeanings">
+            Discover Meanings
+          </a>
         </div>
       </div>
     </section>

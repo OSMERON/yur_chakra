@@ -15,10 +15,10 @@ type CardsProps = {
 };
 
 const defaultItems: Item[] = [
-  { id: "1", title: "Amethyst Balance Bracelet", price: 19.99, image: import.meta.env.BASE_URL + "test.png" },
-  { id: "2", title: "Rose Quartz Calm Necklace", price: 24.5, image: import.meta.env.BASE_URL + "test1.png" },
-  { id: "3", title: "Citrine Energy Ring", price: 14, image: import.meta.env.BASE_URL + "test2.png" },
-  { id: "4", title: "Lapis Lazuli Focus Studs", price: 17.2, image: import.meta.env.BASE_URL + "test3.png" },
+  { id: "1", title: "Amethyst Balance Bracelet", price: 19.99, image: import.meta.env.BASE_URL + "images/products/test.png" },
+  { id: "2", title: "Rose Quartz Calm Necklace", price: 24.5, image: import.meta.env.BASE_URL + "images/products/test1.png" },
+  { id: "3", title: "Citrine Energy Ring", price: 14, image: import.meta.env.BASE_URL + "images/products/test2.png" },
+  { id: "4", title: "Lapis Lazuli Focus Studs", price: 17.2, image: import.meta.env.BASE_URL + "images/products/test3.png" },
 ];
 
 /** 🛒 Animated Add-to-Cart button that also pushes to global cart */

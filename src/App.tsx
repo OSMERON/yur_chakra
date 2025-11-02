@@ -1,5 +1,5 @@
 // src/App.tsx
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ScrollShowcase from "./components/ScrollShowcase";
@@ -19,18 +19,18 @@ function Home() {
 }
 
 export default function App() {
-return (
-<HashRouter>
-<Navbar />
-<Routes>
-<Route path="/" element={<Home />} />
-<Route path="/shop" element={<Shop />} />
-<Route path="/meanings" element={<ChakraMeanings />} />
-<Route path="/product/:id" element={<Product />} />
-<Route path="/cart" element={<Cart />} />
-<Route path="/about" element={<About />} />
-<Route path="/contact" element={<About />} />
-</Routes>
-</HashRouter>
-);
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/meanings" element={<ChakraMeanings />} />
+        <Route path="/product/:id" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/about" element={<About />} />     
+        <Route path="/contact" element={<About />} />
+      </Routes>
+    </>
+  );
 }

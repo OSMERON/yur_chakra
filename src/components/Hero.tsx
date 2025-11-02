@@ -17,13 +17,8 @@ export default function Hero() {
         </p>
 
         <div className="hero-ctas">
-          <a className="btn btn-solid" href="Shop">
-            Shop Collection
-            <IconChevronRight className="ml-8" />
-          </a>
-          <a className="btn btn-solid" href="ChakraMeanings">
-            Discover Meanings
-          </a>
+          <a className="btn btn-solid" href="https://osmeron.github.io/yur_chakra/#/shop">Shop Collection</a>
+          <a className="btn btn-outline" href="https://osmeron.github.io/yur_chakra/#/meanings">Discover meanings </a>
         </div>
       </div>
     </section>

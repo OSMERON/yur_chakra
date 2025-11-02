@@ -20,7 +20,7 @@ export default function Hero() {
             Shop Collection
             <IconChevronRight className="ml-8" />
           </a>
-          <a className="btn btn-outline" href="Meanings">
+          <a className="btn btn-outline" href="ChakraMeanings">
             Discover Meanings
           </a>
         </div>

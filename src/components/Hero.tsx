@@ -21,9 +21,8 @@ export default function Hero() {
             Shop Collection
             <IconChevronRight className="ml-8" />
           </a>
-          <a className="btn btn-outline" href="ChakraMeanings">Discover meanings 
+          <a className="btn btn-outline" href="https://osmeron.github.io/yur_chakra/meanings">Discover meanings 
             <IconChevronLeft className="mr-8" />
-Discover Meanings
  </a>
         </div>
       </div>

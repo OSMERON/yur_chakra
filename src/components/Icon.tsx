@@ -21,4 +21,15 @@ export const IconChevronRight = ({ size = 16, ...props }: IconProps) => (
     <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
   </svg>
 );
+export const IconChevronLeft = ({ size = 16, ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true" {...props}>
+    <path
+      d="M15 6l-6 6 6 6"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      fill="none"
+    />
+  </svg>
+);
 

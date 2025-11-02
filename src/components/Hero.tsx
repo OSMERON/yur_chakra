@@ -1,5 +1,5 @@
 // src/components/Hero.tsx
-import { IconChevronRight } from './Icon';
+import { IconChevronRight,IconChevronLeft } from './Icon';
 
 
 export default function Hero() {
@@ -21,7 +21,10 @@ export default function Hero() {
             Shop Collection
             <IconChevronRight className="ml-8" />
           </a>
-          <a className="btn btn-outline" href="https://osmeron.github.io/yur_chakra/meanings">Discover meanings </a>
+          <a className="btn btn-outline" href="ChakraMeanings">Discover meanings 
+            <IconChevronLeft className="mr-8" />
+Discover Meanings
+ </a>
         </div>
       </div>
     </section>

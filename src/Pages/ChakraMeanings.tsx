@@ -20,7 +20,7 @@ const CHAKRAS: Chakra[] = [
     color: "#B71C1C",
     description:
       "The Root Chakra, or Muladhara, is the first energy center located at the base of the spine. It represents stability, security, and connection to the physical world. Its color is red and its element is earth, symbolizing strength and grounding. When the Root Chakra is balanced, you feel safe, confident, and in control of your life. You trust yourself and your environment. When it is blocked, you may feel anxious, fearful, or unstable, and struggle with money or physical health. To strengthen it, spend time in nature, practice grounding yoga poses like Mountain or Tree, eat root vegetables, and focus on slow breathing at the base of the spine. Repeating affirmations such as “I am safe” or “I belong” also helps build a strong sense of security and balance.",
-    image: import.meta.env.BASE_URL + "images/chakras/Root.jpeg",
+    image: import.meta.env.BASE_URL + "images/chakras/root.jpeg",
     crystals: [
       { name: "Red Jasper", slug: "red-jasper" },
       { name: "Hematite", slug: "hematite" },

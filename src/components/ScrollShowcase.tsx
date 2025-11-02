@@ -33,8 +33,8 @@ export default function ScrollShowcase() {
   // 💎 Example data arrays (replace or import)
   const featured = [
     { id: "1", title: "Amethyst Balance Bracelet", price: 19.99, image:import.meta.env.BASE_URL + "images/products/test.png" },
-    { id: "2", title: "Rose Quartz Calm Necklace", price: 24.5, image:import.meta.env.BASE_URL + " images/products/test1.png" },
-    { id: "3", title: "Citrine Energy Ring", price: 14.0, image:import.meta.env.BASE_URL +  " images/products/test2.png" },
+    { id: "2", title: "Rose Quartz Calm Necklace", price: 24.5, image:import.meta.env.BASE_URL + "images/products/test1.png" },
+    { id: "3", title: "Citrine Energy Ring", price: 14.0, image:import.meta.env.BASE_URL +  "images/products/test2.png" },
     { id: "4", title: "Clear Quartz Clarity Chain", price: 29.0, image:import.meta.env.BASE_URL + "images/products/test4.png" },
   ];
 

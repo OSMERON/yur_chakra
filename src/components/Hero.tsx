@@ -16,11 +16,11 @@ export default function Hero() {
         </p>
 
         <div className="hero-ctas">
-          <a className="btn btn-solid" href="/Shop">
+          <a className="btn btn-solid" href="Shop">
             Shop Collection
             <IconChevronRight className="ml-8" />
           </a>
-          <a className="btn btn-outline" href="/Meanings">
+          <a className="btn btn-outline" href="Meanings">
             Discover Meanings
           </a>
         </div>

@@ -191,7 +191,7 @@
 /* ---------- View Product Button ---------- */
 .card__btn1 {
   width: 100%;
-  max-width: 220px; /* ✅ Same width as Add to Cart */
+  max-width: 120px; /* ✅ Same width as Add to Cart */
   height: 46px;
   border: 1.5px solid var(--accent);
   color: var(--accent);

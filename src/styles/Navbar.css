@@ -37,15 +37,15 @@ body.scrolled .nav-wrap {
   gap: 0.4rem;
 }
 .brand-logo {
-  width: 26px;
-  height: 26px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .brand-name {
-  font-weight: 600;
-  font-size: 0.88rem;
+  font-weight: 800;
+  font-size: 0.99rem;
 }
 
 /* ---------- Desktop Menu ---------- */
